@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "app": {
+    "title": "青阁系统终端Ver：2.2.0-Claw",
+    "theme": "dark"
+  },
+  "deepseek": {
+    "default_model": "deepseek-v4-pro",
+    "max_debug_rounds": 5,
+    "max_tokens": 8192,
+    "temperature_chat": 0.7,
+    "temperature_code": 0.3,
+    "temperature_writing": 0.8,
+    "temperature_analysis": 0.1
+  },
+  "memory": {
+    "max_variants_per_question": 10,
+    "hot_promote_threshold": 5,
+    "cold_archive_days": 30,
+    "auto_cleanup_days": 90
+  },
+  "skills": {
+    "registry_path": "skills/skills_registry.json",
+    "prompts_dir": "skills/writing",
+    "hot_reload": true,
+    "hot_reload_interval_seconds": 60
+  },
+  "bot": {
+    "max_concurrent_tasks": 3,
+    "message_rate_limit_per_second": 5,
+    "heartbeat_interval_seconds": 300
+  },
+  "coin_system": {
+    "sign_min": 0.01,
+    "sign_max": 1.0,
+    "coin_per_million_tokens": 30,
+    "new_user_coins": 10.0,
+    "min_deduct": 0.01,
+    "transfer_fee_rate": 0.02,
+    "channel_bind_enabled": true
+  }
+}

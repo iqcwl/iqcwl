@@ -1,0 +1,159 @@
+{
+  "version": "1.1",
+  "skills": {
+    "code_gen": {
+      "name": "插件代码生成",
+      "description": "根据用户自然语言需求，生成完整的可执行 Python 插件代码",
+      "keywords": ["插件", "写一个", "做一个", "帮我做", "工具", "功能"],
+      "prompt_file": "skills/prompts/code_gen.md",
+      "category": "system"
+    },
+    "bugfix": {
+      "name": "自动调试修复",
+      "description": "分析插件代码错误，自动修复 bug 并返回完整代码",
+      "keywords": ["报错", "出错", "bug", "修复", "调试"],
+      "prompt_file": "skills/prompts/bugfix.md",
+      "category": "system"
+    },
+    "analyze": {
+      "name": "意图分析路由",
+      "description": "分析用户输入的意图类别，路由到对应的专业模块",
+      "keywords": [],
+      "prompt_file": "skills/prompts/analyze.md",
+      "category": "system"
+    },
+    "match_existing": {
+      "name": "已有命令匹配",
+      "description": "匹配用户需求到已安装的插件命令，提取执行参数",
+      "keywords": [],
+      "prompt_file": "skills/prompts/match_existing.md",
+      "category": "system"
+    },
+    "chat": {
+      "name": "聊天闲聊",
+      "description": "友好对话、闲聊、开玩笑、情感交流",
+      "keywords": ["你好", "笑话", "聊天", "心情"],
+      "prompt_file": "skills/prompts/chat.md",
+      "category": "system"
+    },
+    "qa": {
+      "name": "知识问答",
+      "description": "回答知识性问题、解释概念、帮助理解代码",
+      "keywords": ["什么是", "怎么", "为什么", "解释"],
+      "prompt_file": "skills/prompts/qa.md",
+      "category": "system"
+    },
+    "notes": {
+      "name": "笔记管理",
+      "description": "记录、查看、搜索、删除笔记",
+      "keywords": ["记一下", "记录", "笔记", "备忘"],
+      "prompt_file": "skills/prompts/notes.md",
+      "category": "system"
+    },
+    "upgrade": {
+      "name": "插件升级",
+      "description": "基于现有插件代码进行功能升级和改进",
+      "keywords": ["升级", "改进", "增强", "加上", "优化"],
+      "prompt_file": "skills/prompts/upgrade.md",
+      "category": "system"
+    },
+    "short_story": {
+      "name": "短篇小说",
+      "description": "写一个短篇小说，有完整的故事结构（开头、发展、高潮、结局），人物鲜明，情节紧凑",
+      "keywords": ["短篇", "小说", "故事", "悬疑", "爱情", "科幻", "奇幻"],
+      "prompt_file": "skills/writing/short_story.md",
+      "category": "writing"
+    },
+    "novel": {
+      "name": "长篇小说",
+      "description": "构思或撰写长篇小说，包括世界观设定、人物设计、大纲设计、正文撰写、续写",
+      "keywords": ["长篇", "小说", "连载", "大纲", "仙侠", "玄幻", "都市"],
+      "prompt_file": "skills/writing/novel.md",
+      "category": "writing"
+    },
+    "thesis": {
+      "name": "论文辅导",
+      "description": "学术论文写作辅导，包括选题、大纲、摘要、文献综述、正文润色、格式指导",
+      "keywords": ["论文", "学术", "摘要", "文献", "综述", "查重", "降重"],
+      "prompt_file": "skills/writing/thesis.md",
+      "category": "writing"
+    },
+    "report": {
+      "name": "工作汇报",
+      "description": "撰写工作汇报、总结，包括日报周报月报、季度总结、年终述职、项目汇报",
+      "keywords": ["汇报", "总结", "日报", "周报", "月报", "述职", "报告"],
+      "prompt_file": "skills/writing/report.md",
+      "category": "writing"
+    },
+    "article": {
+      "name": "文章写作",
+      "description": "撰写高质量文章，包括技术博客、知识科普、观点评论、经验分享",
+      "keywords": ["文章", "博客", "教程", "科普", "评论", "分析"],
+      "prompt_file": "skills/writing/article.md",
+      "category": "writing"
+    },
+    "copywriting": {
+      "name": "文案创作",
+      "description": "创作有吸引力的文案，包括产品描述、社交媒体文案、广告语、品牌故事",
+      "keywords": ["文案", "广告", "slogan", "朋友圈", "小红书", "营销"],
+      "prompt_file": "skills/writing/copywriting.md",
+      "category": "writing"
+    },
+    "poetry": {
+      "name": "诗歌散文",
+      "description": "创作诗歌或散文，包括现代诗、古体诗、散文诗、抒情散文",
+      "keywords": ["诗", "诗歌", "散文", "古诗", "绝句", "律诗", "现代诗"],
+      "prompt_file": "skills/writing/poetry.md",
+      "category": "writing"
+    },
+    "script": {
+      "name": "剧本脚本",
+      "description": "创作剧本或脚本，包括短视频脚本、情景剧、广告脚本、广播剧",
+      "keywords": ["剧本", "脚本", "短视频", "情景剧", "小品", "广播剧"],
+      "prompt_file": "skills/writing/script.md",
+      "category": "writing"
+    },
+    "email": {
+      "name": "邮件写作",
+      "description": "撰写各类邮件，包括商务邮件、求职信、辞职信、感谢信、通知",
+      "keywords": ["邮件", "信", "辞职", "求职", "自荐", "通知"],
+      "prompt_file": "skills/writing/email.md",
+      "category": "writing"
+    },
+    "speech": {
+      "name": "演讲发言",
+      "description": "撰写演讲稿，包括毕业典礼、年会发言、竞聘演讲、开幕致辞",
+      "keywords": ["演讲", "发言", "致辞", "演讲稿", "发言稿"],
+      "prompt_file": "skills/writing/speech.md",
+      "category": "writing"
+    },
+    "review": {
+      "name": "书评影评",
+      "description": "撰写书评、影评、剧评、音乐评论、产品评测",
+      "keywords": ["书评", "影评", "剧评", "评论", "评测", "观后感", "读后感"],
+      "prompt_file": "skills/writing/review.md",
+      "category": "writing"
+    },
+    "outline": {
+      "name": "大纲设计",
+      "description": "设计各类大纲框架，包括小说大纲、论文大纲、文章大纲、方案大纲",
+      "keywords": ["大纲", "框架", "结构", "目录", "章节"],
+      "prompt_file": "skills/writing/outline.md",
+      "category": "writing"
+    },
+    "polish": {
+      "name": "润色改写",
+      "description": "文字润色、改写优化，包括语言美化、正式化、精简化、扩写、降重",
+      "keywords": ["润色", "改写", "优化", "精简", "扩写", "降重", "美化"],
+      "prompt_file": "skills/writing/polish.md",
+      "category": "writing"
+    },
+    "general": {
+      "name": "通用写作",
+      "description": "不属于以上分类的其他写作需求，灵活处理",
+      "keywords": ["写", "创作", "撰写", "起草", "编写"],
+      "prompt_file": "skills/writing/general.md",
+      "category": "writing"
+    }
+  }
+}
